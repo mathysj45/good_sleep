@@ -8,13 +8,6 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Keyboard",
-			"name": "Clavier",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -29,29 +22,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Platform",
-			"name": "Plate-forme",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "scrollto",
-			"name": "Défiler vers",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "solid",
 			"name": "Solide",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "wrap",
-			"name": "Enrouler",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -59,23 +31,19 @@
 	"uniqueId": "8q16q9ipitm",
 	"objectTypes": {
 		"items": [
-			"Sprite",
+			"herbeVerte",
+			"sapinVert",
 			"ArrièreplanRépété",
+			"CaptureDécran2",
+			"Starry_night_Layer_",
+			"Starry_night_Layer_2",
+			"Starry_night_Layer_3",
 			"ArrièreplanRépété2",
+			"SansTitre",
+			"CaptureDécran",
 			"ArrièreplanRépété3",
-			"Clavier",
 			"ArrièreplanRépété4",
-			"ArrièreplanRépété5",
-			"ArrièreplanRépété6",
-			"ArrièreplanRépété7",
-			"ArrièreplanRépété8",
-			"ArrièreplanRépété9",
-			"Sprite2",
-			"ArrièreplanRépété10",
-			"ArrièreplanRépété11",
-			"ArrièreplanRépété12",
-			"ArrièreplanRépété13",
-			"ArrièreplanRépété14"
+			"ArrièreplanRépété5"
 		],
 		"subfolders": []
 	},
@@ -83,7 +51,9 @@
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"premierPlan"
+		],
 		"subfolders": []
 	},
 	"layouts": {
