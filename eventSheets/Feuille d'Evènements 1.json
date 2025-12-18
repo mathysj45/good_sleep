@@ -1,5 +1,100 @@
 {
 	"name": "Feuille d'Evènements 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-animation-finished",
+					"objectClass": "Sprite",
+					"sid": 156580776039785
+				}
+			],
+			"actions": [
+				{
+					"id": "start-animation",
+					"objectClass": "Sprite",
+					"sid": 170123230212064,
+					"parameters": {
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 163203909250628
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Clavier",
+					"sid": 344390449009957,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite",
+					"sid": 512789716393923,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 173735877901940
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Clavier",
+					"sid": 670647363905192,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite",
+					"sid": 403468439936433,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 128642108521077
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Clavier",
+					"sid": 521971868174572,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Sprite",
+					"sid": 915456805823025,
+					"behaviorType": "Plateforme",
+					"parameters": {
+						"control": "jump"
+					}
+				}
+			],
+			"sid": 585323433035651
+		}
+	],
 	"sid": 222771437845269
 }
