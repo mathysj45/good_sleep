@@ -5,10 +5,38 @@
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
-	"usedAddons": [],
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Arrière-plan Répété",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Plate-forme",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
 	"uniqueId": "8q16q9ipitm",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"heros",
+			"Sprite",
+			"Sprite2",
+			"sorcière",
+			"ArrièreplanRépété"
+		],
 		"subfolders": []
 	},
 	"functionsName": "Fonctions",
@@ -113,8 +141,1146 @@
 			"subfolders": []
 		},
 		"general": {
-			"items": [],
-			"subfolders": []
+			"items": [
+				{
+					"name": "Walking Enemy - Attack.gif",
+					"type": "image/gif",
+					"sid": 540655468134049,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Corset v2.png",
+					"type": "image/png",
+					"sid": 537770995743404,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "B_witch.aseprite",
+					"type": "application/octet-stream",
+					"sid": 401386160697816,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "GandalfHardcore 39x Hats.zip",
+							"type": "application/zip",
+							"sid": 787735395631678,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [
+						{
+							"items": [],
+							"subfolders": [
+								{
+									"items": [],
+									"subfolders": [
+										{
+											"items": [],
+											"subfolders": [
+												{
+													"items": [],
+													"subfolders": [
+														{
+															"items": [
+																{
+																	"name": "Raised Flag - Sprite sheet.png",
+																	"type": "image/png",
+																	"sid": 379138584210639,
+																	"file-info": {
+																		"purpose": "none"
+																	}
+																},
+																{
+																	"name": "Raised Flag.aseprite",
+																	"type": "application/octet-stream",
+																	"sid": 487668123905768,
+																	"file-info": {
+																		"purpose": "none"
+																	}
+																}
+															],
+															"subfolders": [],
+															"name": "Raised Flag"
+														},
+														{
+															"items": [
+																{
+																	"name": "Unraised Flag - Sprite sheet.aseprite",
+																	"type": "application/octet-stream",
+																	"sid": 717285374768418,
+																	"file-info": {
+																		"purpose": "none"
+																	}
+																},
+																{
+																	"name": "Unraised Flag.aseprite",
+																	"type": "application/octet-stream",
+																	"sid": 866756336506973,
+																	"file-info": {
+																		"purpose": "none"
+																	}
+																}
+															],
+															"subfolders": [],
+															"name": "Unraised Flag"
+														}
+													],
+													"name": "Flags"
+												},
+												{
+													"items": [
+														{
+															"name": "Flying Enemy - Sprite sheet.png",
+															"type": "image/png",
+															"sid": 749782571479313,
+															"file-info": {
+																"purpose": "none"
+															}
+														},
+														{
+															"name": "Flying Enemy - Death.png",
+															"type": "image/png",
+															"sid": 363978734136775,
+															"file-info": {
+																"purpose": "none"
+															}
+														},
+														{
+															"name": "Flying Enemy.aseprite",
+															"type": "application/octet-stream",
+															"sid": 452428432338080,
+															"file-info": {
+																"purpose": "none"
+															}
+														},
+														{
+															"name": "Flying Enemy - Move.png",
+															"type": "image/png",
+															"sid": 132602996959856,
+															"file-info": {
+																"purpose": "none"
+															}
+														}
+													],
+													"subfolders": [],
+													"name": "Flying Enemy"
+												},
+												{
+													"items": [
+														{
+															"name": "Jump Pad.aseprite",
+															"type": "application/octet-stream",
+															"sid": 249949457134565,
+															"file-info": {
+																"purpose": "none"
+															}
+														},
+														{
+															"name": "Jump Pad - Sprite sheet.png",
+															"type": "image/png",
+															"sid": 487490144799580,
+															"file-info": {
+																"purpose": "none"
+															}
+														}
+													],
+													"subfolders": [],
+													"name": "Jump Pad"
+												},
+												{
+													"items": [
+														{
+															"name": "Player - Death.png",
+															"type": "image/png",
+															"sid": 454373950324461,
+															"file-info": {
+																"purpose": "none"
+															}
+														},
+														{
+															"name": "Player - Climb.png",
+															"type": "image/png",
+															"sid": 199086706397877,
+															"file-info": {
+																"purpose": "none"
+															}
+														},
+														{
+															"name": "Player - Idle.png",
+															"type": "image/png",
+															"sid": 686127090021986,
+															"file-info": {
+																"purpose": "none"
+															}
+														},
+														{
+															"name": "Player - Move.png",
+															"type": "image/png",
+															"sid": 941770946147145,
+															"file-info": {
+																"purpose": "none"
+															}
+														},
+														{
+															"name": "Player - Jump.png",
+															"type": "image/png",
+															"sid": 761290898154002,
+															"file-info": {
+																"purpose": "none"
+															}
+														},
+														{
+															"name": "Player.aseprite",
+															"type": "application/octet-stream",
+															"sid": 681448518195240,
+															"file-info": {
+																"purpose": "none"
+															}
+														},
+														{
+															"name": "Player - Sprite sheet.png",
+															"type": "image/png",
+															"sid": 801760470300423,
+															"file-info": {
+																"purpose": "none"
+															}
+														}
+													],
+													"subfolders": [],
+													"name": "Player"
+												},
+												{
+													"items": [],
+													"subfolders": [
+														{
+															"items": [
+																{
+																	"name": "Big Sawblades.aseprite",
+																	"type": "application/octet-stream",
+																	"sid": 499893407392539,
+																	"file-info": {
+																		"purpose": "none"
+																	}
+																},
+																{
+																	"name": "Big Sawblades.png",
+																	"type": "image/png",
+																	"sid": 924240519119617,
+																	"file-info": {
+																		"purpose": "none"
+																	}
+																}
+															],
+															"subfolders": [],
+															"name": "Big Sawblades"
+														},
+														{
+															"items": [
+																{
+																	"name": "Small Sawblades.aseprite",
+																	"type": "application/octet-stream",
+																	"sid": 295399393060927,
+																	"file-info": {
+																		"purpose": "none"
+																	}
+																},
+																{
+																	"name": "Small Sawblades - Sprite sheet.png",
+																	"type": "image/png",
+																	"sid": 677117412867377,
+																	"file-info": {
+																		"purpose": "none"
+																	}
+																}
+															],
+															"subfolders": [],
+															"name": "Small Sawblades"
+														}
+													],
+													"name": "Sawblades"
+												},
+												{
+													"items": [
+														{
+															"name": "Walking Enemy - Idle.png",
+															"type": "image/png",
+															"sid": 993487796076702,
+															"file-info": {
+																"purpose": "none"
+															}
+														},
+														{
+															"name": "Walking Enemy - Death.png",
+															"type": "image/png",
+															"sid": 594360034400550,
+															"file-info": {
+																"purpose": "none"
+															}
+														},
+														{
+															"name": "Walking Enemy - Jump.png",
+															"type": "image/png",
+															"sid": 584421836233509,
+															"file-info": {
+																"purpose": "none"
+															}
+														},
+														{
+															"name": "Walking Enemy - Attack.png",
+															"type": "image/png",
+															"sid": 645845718898840,
+															"file-info": {
+																"purpose": "none"
+															}
+														},
+														{
+															"name": "Walking Enemy - Move.png",
+															"type": "image/png",
+															"sid": 618368833373855,
+															"file-info": {
+																"purpose": "none"
+															}
+														},
+														{
+															"name": "Walking Enemy.aseprite",
+															"type": "application/octet-stream",
+															"sid": 177416535138996,
+															"file-info": {
+																"purpose": "none"
+															}
+														},
+														{
+															"name": "Walking Enemy - Sprite sheet.png",
+															"type": "image/png",
+															"sid": 667393629195149,
+															"file-info": {
+																"purpose": "none"
+															}
+														}
+													],
+													"subfolders": [],
+													"name": "Walking Enemy"
+												},
+												{
+													"items": [
+														{
+															"name": "Walking NPC - Idle.png",
+															"type": "image/png",
+															"sid": 569614950143256,
+															"file-info": {
+																"purpose": "none"
+															}
+														},
+														{
+															"name": "Walking NPC - Sprite sheet.png",
+															"type": "image/png",
+															"sid": 298407516044699,
+															"file-info": {
+																"purpose": "none"
+															}
+														},
+														{
+															"name": "Walking NPC - Move.png",
+															"type": "image/png",
+															"sid": 459405844125414,
+															"file-info": {
+																"purpose": "none"
+															}
+														},
+														{
+															"name": "Walking NPC.aseprite",
+															"type": "application/octet-stream",
+															"sid": 497637709530008,
+															"file-info": {
+																"purpose": "none"
+															}
+														}
+													],
+													"subfolders": [],
+													"name": "Walking NPC"
+												}
+											],
+											"name": "Animations"
+										},
+										{
+											"items": [
+												{
+													"name": "Flying Enemy - Move.gif",
+													"type": "image/gif",
+													"sid": 126539502867098,
+													"file-info": {
+														"purpose": "none"
+													}
+												},
+												{
+													"name": "Flying Enemy - Death.gif",
+													"type": "image/gif",
+													"sid": 266714865979332,
+													"file-info": {
+														"purpose": "none"
+													}
+												},
+												{
+													"name": "Game Sample.png",
+													"type": "image/png",
+													"sid": 734017639134901,
+													"file-info": {
+														"purpose": "none"
+													}
+												},
+												{
+													"name": "Player - Climb.gif",
+													"type": "image/gif",
+													"sid": 892326782559310,
+													"file-info": {
+														"purpose": "none"
+													}
+												},
+												{
+													"name": "Player - Death.gif",
+													"type": "image/gif",
+													"sid": 790357173941012,
+													"file-info": {
+														"purpose": "none"
+													}
+												},
+												{
+													"name": "Player - Idle.gif",
+													"type": "image/gif",
+													"sid": 507908572390818,
+													"file-info": {
+														"purpose": "none"
+													}
+												},
+												{
+													"name": "Jump Pad.gif",
+													"type": "image/gif",
+													"sid": 644506040572806,
+													"file-info": {
+														"purpose": "none"
+													}
+												},
+												{
+													"name": "Player - Jump.gif",
+													"type": "image/gif",
+													"sid": 983237942465439,
+													"file-info": {
+														"purpose": "none"
+													}
+												},
+												{
+													"name": "Player - Move.gif",
+													"type": "image/gif",
+													"sid": 616151572193665,
+													"file-info": {
+														"purpose": "none"
+													}
+												},
+												{
+													"name": "Walking Enemy - Attack.gif",
+													"type": "image/gif",
+													"sid": 848254768690015,
+													"file-info": {
+														"purpose": "none"
+													}
+												},
+												{
+													"name": "Walking Enemy - Death.gif",
+													"type": "image/gif",
+													"sid": 714177150531124,
+													"file-info": {
+														"purpose": "none"
+													}
+												},
+												{
+													"name": "Raised Flag.gif",
+													"type": "image/gif",
+													"sid": 430522047624295,
+													"file-info": {
+														"purpose": "none"
+													}
+												},
+												{
+													"name": "Walking Enemy - Idle.gif",
+													"type": "image/gif",
+													"sid": 936057255357295,
+													"file-info": {
+														"purpose": "none"
+													}
+												},
+												{
+													"name": "Walking Enemy - Jump.gif",
+													"type": "image/gif",
+													"sid": 714754042562116,
+													"file-info": {
+														"purpose": "none"
+													}
+												},
+												{
+													"name": "Walking Enemy - Move.gif",
+													"type": "image/gif",
+													"sid": 935666153369511,
+													"file-info": {
+														"purpose": "none"
+													}
+												},
+												{
+													"name": "Walking NPC - Move.gif",
+													"type": "image/gif",
+													"sid": 152686571478177,
+													"file-info": {
+														"purpose": "none"
+													}
+												},
+												{
+													"name": "Animations Preview.mp4",
+													"type": "video/mp4",
+													"sid": 717541438505355,
+													"file-info": {
+														"purpose": "none"
+													}
+												},
+												{
+													"name": "Previews-(Smaller)-2.gif",
+													"type": "image/gif",
+													"sid": 924860380708191,
+													"file-info": {
+														"purpose": "none"
+													}
+												},
+												{
+													"name": "Previews (Smaller).gif",
+													"type": "image/gif",
+													"sid": 465968825731261,
+													"file-info": {
+														"purpose": "none"
+													}
+												}
+											],
+											"subfolders": [],
+											"name": "Previews"
+										},
+										{
+											"items": [
+												{
+													"name": "16x16 Tileset.aseprite",
+													"type": "application/octet-stream",
+													"sid": 869789208675991,
+													"file-info": {
+														"purpose": "none"
+													}
+												},
+												{
+													"name": "16x16 Tileset.png",
+													"type": "image/png",
+													"sid": 405815676734278,
+													"file-info": {
+														"purpose": "none"
+													}
+												}
+											],
+											"subfolders": [],
+											"name": "Tileset"
+										}
+									],
+									"name": "16x16 2D Platformer - Programmer Art"
+								}
+							],
+							"name": "16x16 2D Platformer - Programmer Art"
+						}
+					],
+					"name": "assets"
+				},
+				{
+					"items": [
+						{
+							"name": "READ ME.txt",
+							"type": "text/plain",
+							"sid": 945590368441590,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [
+						{
+							"items": [
+								{
+									"name": "Female Skin2.png",
+									"type": "image/png",
+									"sid": 849197993089806,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Female Skin1.png",
+									"type": "image/png",
+									"sid": 196091262902758,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Female Skin3.png",
+									"type": "image/png",
+									"sid": 501250993221075,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Male Skin1.png",
+									"type": "image/png",
+									"sid": 840609942789567,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Female Skin4.png",
+									"type": "image/png",
+									"sid": 642246845175530,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Female Skin5.png",
+									"type": "image/png",
+									"sid": 773949236225306,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Male Skin4.png",
+									"type": "image/png",
+									"sid": 196246028881592,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Male Skin3.png",
+									"type": "image/png",
+									"sid": 127755449766989,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Male Skin2.png",
+									"type": "image/png",
+									"sid": 942698158065514,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Male Skin5.png",
+									"type": "image/png",
+									"sid": 281542205740448,
+									"file-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "Character skin colors"
+						},
+						{
+							"items": [
+								{
+									"name": "Blue Corset v2.png",
+									"type": "image/png",
+									"sid": 623256576897290,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Blue Corset.png",
+									"type": "image/png",
+									"sid": 341061428839570,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Blue Panties and Bra.png",
+									"type": "image/png",
+									"sid": 233913237872067,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Corset v2.png",
+									"type": "image/png",
+									"sid": 267695883084549,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Boots.png",
+									"type": "image/png",
+									"sid": 845630274259550,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Corset.png",
+									"type": "image/png",
+									"sid": 132798319488747,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Green Corset v2.png",
+									"type": "image/png",
+									"sid": 635840707050684,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Green Corset.png",
+									"type": "image/png",
+									"sid": 995437645531615,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Green Panties and Bra.png",
+									"type": "image/png",
+									"sid": 338841089472154,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Green Socks.png",
+									"type": "image/png",
+									"sid": 822199105726519,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Orange Corset v2.png",
+									"type": "image/png",
+									"sid": 629371307359158,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Orange Corset.png",
+									"type": "image/png",
+									"sid": 403951720776921,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Orange Panties and Bra.png",
+									"type": "image/png",
+									"sid": 149360136544040,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Purple Corset.png",
+									"type": "image/png",
+									"sid": 671252385454538,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Purple Corset v2.png",
+									"type": "image/png",
+									"sid": 285806534452995,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Orange Socks.png",
+									"type": "image/png",
+									"sid": 534920760441404,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Purple Panties and Bra.png",
+									"type": "image/png",
+									"sid": 227920009015767,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Red Panties and Bra.png",
+									"type": "image/png",
+									"sid": 768988458032299,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Purple Socks.png",
+									"type": "image/png",
+									"sid": 657357082085606,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Red Socks.png",
+									"type": "image/png",
+									"sid": 644004101171276,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Skirt.png",
+									"type": "image/png",
+									"sid": 347655693412124,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Skyblue Panties and Bra.png",
+									"type": "image/png",
+									"sid": 836828565338601,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Skyblue Socks.png",
+									"type": "image/png",
+									"sid": 162081137494439,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Socks.png",
+									"type": "image/png",
+									"sid": 763925679567559,
+									"file-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "Female Clothing"
+						},
+						{
+							"items": [
+								{
+									"name": "Female Hair1.png",
+									"type": "image/png",
+									"sid": 127658453058494,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Female Hair2.png",
+									"type": "image/png",
+									"sid": 625448089190419,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Female Hair4.png",
+									"type": "image/png",
+									"sid": 845747368578494,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Female Hair3.png",
+									"type": "image/png",
+									"sid": 187562191395548,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Female Hair5.png",
+									"type": "image/png",
+									"sid": 294589360221515,
+									"file-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "Female Hair"
+						},
+						{
+							"items": [
+								{
+									"name": "Female Sword.png",
+									"type": "image/png",
+									"sid": 605382383971857,
+									"file-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "Female Hand"
+						},
+						{
+							"items": [
+								{
+									"name": "Blue Pants.png",
+									"type": "image/png",
+									"sid": 896462244579549,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Blue Shirt v2.png",
+									"type": "image/png",
+									"sid": 646284692746961,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Boots.png",
+									"type": "image/png",
+									"sid": 194298713533844,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Green Shirt v2.png",
+									"type": "image/png",
+									"sid": 855603912365628,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Green Pants.png",
+									"type": "image/png",
+									"sid": 944313434908388,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "orange Shirt v2.png",
+									"type": "image/png",
+									"sid": 507010126789060,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Green Underwear.png",
+									"type": "image/png",
+									"sid": 481421135885094,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Orange Underwear.png",
+									"type": "image/png",
+									"sid": 706271002819873,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Pants.png",
+									"type": "image/png",
+									"sid": 721186287949120,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Orange Pants.png",
+									"type": "image/png",
+									"sid": 790448857688874,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Purple Shirt v2.png",
+									"type": "image/png",
+									"sid": 343677990774038,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Purple Pants.png",
+									"type": "image/png",
+									"sid": 960019315629702,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Purple Underwear.png",
+									"type": "image/png",
+									"sid": 607288123651504,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Shirt v2.png",
+									"type": "image/png",
+									"sid": 203880365201992,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Shirt.png",
+									"type": "image/png",
+									"sid": 237285013517850,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Red Underwear.png",
+									"type": "image/png",
+									"sid": 423565225938275,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Shoes.png",
+									"type": "image/png",
+									"sid": 152300245553050,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Skyblue Underwear.png",
+									"type": "image/png",
+									"sid": 693083738947383,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Underwear.png",
+									"type": "image/png",
+									"sid": 223248942057479,
+									"file-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "Male Clothing"
+						},
+						{
+							"items": [
+								{
+									"name": "Male Hair3.png",
+									"type": "image/png",
+									"sid": 706884147961429,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Male Hair2.png",
+									"type": "image/png",
+									"sid": 535711276533337,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Male Hair1.png",
+									"type": "image/png",
+									"sid": 518086331309569,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Male Hair5.png",
+									"type": "image/png",
+									"sid": 463339602793437,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Male Hair4.png",
+									"type": "image/png",
+									"sid": 354047370418632,
+									"file-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "Male Hair"
+						},
+						{
+							"items": [
+								{
+									"name": "Male Sword.png",
+									"type": "image/png",
+									"sid": 405538808777190,
+									"file-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "Male Hand"
+						}
+					],
+					"name": "GandalfHardcore Character Asset Pack"
+				}
+			]
 		}
 	},
 	"timelines": {
