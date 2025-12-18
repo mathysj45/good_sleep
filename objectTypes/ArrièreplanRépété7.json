@@ -1,11 +1,7 @@
 {
-	"name": "ArrièreplanRépété",
+	"name": "ArrièreplanRépété7",
 	"plugin-id": "TiledBg",
-<<<<<<< HEAD
-	"sid": 950875354821499,
-=======
-	"sid": 505172628062378,
->>>>>>> 34efbd35128bc595f79269d203ebffba22b7b329
+	"sid": 250914843637109,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,11 +16,7 @@
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-<<<<<<< HEAD
-		"imageSpriteId": 1419528,
-=======
-		"imageSpriteId": 3500095,
->>>>>>> 34efbd35128bc595f79269d203ebffba22b7b329
+		"imageSpriteId": 6311946,
 		"useCollisionPoly": true,
 		"tag": ""
 	}

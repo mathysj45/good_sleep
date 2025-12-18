@@ -22,8 +22,13 @@
 		},
 		{
 			"type": "behavior",
+<<<<<<< HEAD
 			"id": "Platform",
 			"name": "Plate-forme",
+=======
+			"id": "solid",
+			"name": "Solide",
+>>>>>>> 34efbd35128bc595f79269d203ebffba22b7b329
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -31,11 +36,27 @@
 	"uniqueId": "8q16q9ipitm",
 	"objectTypes": {
 		"items": [
+<<<<<<< HEAD
 			"heros",
 			"Sprite",
 			"Sprite2",
 			"sorcière",
 			"ArrièreplanRépété"
+=======
+			"herbeVerte",
+			"sapinVert",
+			"ArrièreplanRépété",
+			"CaptureDécran2",
+			"Starry_night_Layer_",
+			"Starry_night_Layer_2",
+			"Starry_night_Layer_3",
+			"ArrièreplanRépété2",
+			"SansTitre",
+			"CaptureDécran",
+			"ArrièreplanRépété3",
+			"ArrièreplanRépété4",
+			"ArrièreplanRépété5"
+>>>>>>> 34efbd35128bc595f79269d203ebffba22b7b329
 		],
 		"subfolders": []
 	},
@@ -43,7 +64,9 @@
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"premierPlan"
+		],
 		"subfolders": []
 	},
 	"layouts": {
